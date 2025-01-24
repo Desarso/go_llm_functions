@@ -1,4 +1,4 @@
-module desarso/godecorators
+module desarso/go_llm_functions
 
 go 1.22.2
 

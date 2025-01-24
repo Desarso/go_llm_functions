@@ -1,7 +1,7 @@
 package main
 
 import (
-	llm "desarso/godecorators/helpers"
+	llm "desarso/go_llm_functions/helpers"
 	"fmt"
 )
 

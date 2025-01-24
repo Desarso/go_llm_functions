@@ -5,11 +5,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
-	"os"
-
-	"github.com/joho/godotenv"
 )
 
 // ChatRequest represents the request body for the API
@@ -17,15 +13,15 @@ import (
 var GROQ_API_KEY = ""
 var MODEL = "llama-3.3-70b-versatile"
 
-func init() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
-	}
+// func init() {
+// 	err := godotenv.Load()
+// 	if err != nil {
+// 		log.Fatalf("Error loading .env file: %v", err)
+// 	}
 
-	GROQ_API_KEY = os.Getenv("GROQ_API_KEY")
+// 	GROQ_API_KEY = os.Getenv("GROQ_API_KEY")
 
-}
+// }
 
 func SingleResponse(message string) (string, error) {
 	// Define the model and messages
