@@ -1,8 +1,9 @@
 package main
 
 import (
-	llm "desarso/go_llm_functions/helpers"
 	"fmt"
+
+	llm "github.com/desarso/go_llm_functions/helpers"
 )
 
 func main() {
